@@ -131,9 +131,9 @@ commands:
 	i = 1
 	while argv[i].startswith('-'):
 		if argv[i] == '-h':
-			pass
+			host = argv[i+1]
 		elif argv[i] == '-p':
-			pass
+			port = int(argv[i+1])
 		i += 2
 
 	cmd = argv[i]
